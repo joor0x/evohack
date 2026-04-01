@@ -1,0 +1,12 @@
+{
+  "steps": [
+    {
+      "method": "POST",
+      "url": "http://localhost:31337/rest/user/login",
+      "headers": { "Content-Type": "application/json" },
+      "body_template": "{\"email\": \"admin@juice-sh.op\", \"password\": \"{payload}\"}",
+      "captures": [ { "name": "token", "type": "json", "path": "authentication.token" } ]
+    }
+  ]
+}
+

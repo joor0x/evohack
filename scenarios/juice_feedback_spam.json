@@ -1,0 +1,26 @@
+{
+  "steps": [
+    {
+      "method": "POST",
+      "url": "http://localhost:31337/api/Feedbacks/",
+      "headers": { "Content-Type": "application/json", "X-Forwarded-For": "{rand}", "Accept-Language": "en-US,en;q=0.5" },
+      "body_template": "{\"comment\": \"{payload}-{rand}\", \"rating\": 1}",
+      "captures": []
+    },
+    {
+      "method": "POST",
+      "url": "http://localhost:31337/api/Feedbacks/",
+      "headers": { "Content-Type": "application/json", "X-Forwarded-For": "{rand}", "Accept-Language": "es-ES,es;q=0.7" },
+      "body_template": "{\"comment\": \"{payload}-{ts}\", \"rating\": 1}",
+      "captures": []
+    },
+    {
+      "method": "POST",
+      "url": "http://localhost:31337/api/Feedbacks/",
+      "headers": { "Content-Type": "application/json", "X-Forwarded-For": "{rand}", "Accept-Language": "de-DE,de;q=0.8" },
+      "body_template": "{\"comment\": \"{payload}-{rand}-{ts}\", \"rating\": 1}",
+      "captures": []
+    }
+  ]
+}
+

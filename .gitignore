@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+egg-info/
+*.egg
+*.egg-info/
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Output files (except example files)
+*.json
+!results_top10.json
+!scenarios/*.json
+outputs/
+logs/
+
+# Docker
+*.log
+
+# ChromaDB / Memory
+.evohack_chroma/
+
+# Secrets (do not commit)
+.env
+.env.*
+*.pem
+*.key
+credentials.json

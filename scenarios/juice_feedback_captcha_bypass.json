@@ -1,0 +1,19 @@
+{
+  "steps": [
+    {
+      "method": "GET",
+      "url": "http://localhost:31337/rest/captcha/",
+      "captures": [
+        { "name": "captchaId", "type": "json", "path": "captchaId" },
+        { "name": "answer", "type": "json", "path": "answer" }
+      ]
+    },
+    {
+      "method": "POST",
+      "url": "http://localhost:31337/api/Feedbacks/",
+      "headers": { "Content-Type": "application/json" },
+      "body_template": "{\"comment\": \"{payload}\", \"rating\": 1, \"captchaId\": \"{captchaId}\", \"captcha\": \"{answer}\"}"
+    }
+  ]
+}
+
