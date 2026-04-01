@@ -2,7 +2,7 @@
 
 Evolutionary Algorithms + LLM for Automated Pentesting.
 
-EvoHack-LLM is an experimental framework that combines a **Genetic Algorithm (GA)** with **LLM reasoning** (Ollama, OpenAI, Anthropic) to autonomously discover and exploit web vulnerabilities. Built for OWASP Juice Shop and similar targets.
+EvoHack-LLM is an experimental framework that combines a **Genetic Algorithm (GA)** with **LLM reasoning** (Ollama, OpenAI, Anthropic) to **autonomously discover and exploit web vulnerabilities**. Built for OWASP Juice Shop and similar targets.
 
 <img width="1324" height="520" alt="image" src="https://github.com/user-attachments/assets/a4b077be-9837-4106-a1cb-0d9106cc721a" />
 
